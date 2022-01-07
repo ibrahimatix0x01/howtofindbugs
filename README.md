@@ -24,10 +24,10 @@ sudo ./install.sh
 ### Usage
 ```text
 #> ./howtofindbugs.sh example.com
-[*] Executing SubWalker against: example.com
+[*] Executing HowToFindBugs against: example.com
 [*] Launching SubScraper
 [*] Launching Sublist3r
-[*] Launching assetfinder
+[*] Launching Assetfinder
 [*] Waiting until all scripts complete...
 
 [+] HowToFindBugs complete with 44results

@@ -17,7 +17,7 @@ Written for Debian-based Linux distributions (*Kali*, *Parrot Sec* & *Ubuntu*):
 
 ```text
 git clone https://github.com/ibrahimatix/howtofindbugs
-cd subwalker; chmod +x install.sh howtofindbugs.sh
+cd howtofindbugs; chmod +x install.sh howtofindbugs.sh
 sudo ./install.sh
 ```
 
@@ -30,7 +30,7 @@ sudo ./install.sh
 [*] Launching assetfinder
 [*] Waiting until all scripts complete...
 
-[+] SubWalker complete with 107 results
+[+] HowToFindBugs complete with 44results
 [+] Output saved to: /opt/subwalker/howtofindbugs.txt
 
 [*] Launching nuclei

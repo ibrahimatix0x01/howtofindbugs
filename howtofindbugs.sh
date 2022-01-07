@@ -10,6 +10,7 @@ fi
 
 OUT_DIR=$(pwd)
 TOOLS_DIR=$(pwd)/tools
+mkdir $TARGET
 
 echo [*] Executing HowToFindBugs against: ${TARGET}
 
@@ -19,22 +20,22 @@ echo [*] Executing HowToFindBugs against: ${TARGET}
 
 cd $TOOLS_DIR/subscraper
 echo "[*] Launching SubScraper"
-python3 subscraper.py $TARGET -o $OUT_DIR/subscraper.txt &> /dev/null &
+python3 subscraper.py $TARGET -o $OUT_DIR/$TARGET/subscraper.txt &> /dev/null &
 
 cd $TOOLS_DIR/Sublist3r
 echo "[*] Launching Sublist3r"
-python3 sublist3r.py -d $TARGET -o $OUT_DIR/sublist3r.txt &> /dev/null &
+python3 sublist3r.py -d $TARGET -o $OUT_DIR/$TARGET/sublist3r.txt &> /dev/null &
 
 cd $TOOLS_DIR/assetfinder
 echo "[*] Launching assetfinder"
-./assetfinder --subs-only $TARGET > $OUT_DIR/assetfinder.txt &
+./assetfinder --subs-only $TARGET > $OUT_DIR/$TARGETassetfinder.txt &
 
 echo "[*] Waiting until all scripts complete..."
 wait
 
 cd $OUT_DIR
-mkdir $TARGET
-(cat subscraper.txt sublist3r.txt assetfinder.txt | sort -u) > $OUT_DIR/$TARGET/howtofindbugs.txt
+cd $TARGET
+(cat subscraper.txt sublist3r.txt assetfinder.txt | sort -u) > howtofindbugs.txt
 rm subscraper.txt sublist3r.txt assetfinder.txt
 
 RES=$(cat howtofindbugs.txt | wc -l)

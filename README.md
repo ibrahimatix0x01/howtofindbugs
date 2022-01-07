@@ -31,7 +31,7 @@ sudo ./install.sh
 [*] Waiting until all scripts complete...
 
 [+] SubWalker complete with 107 results
-[+] Output saved to: /opt/subwalker/subwalker.txt
+[+] Output saved to: /opt/subwalker/howtofindbugs.txt
 
 [*] Launching nuclei
 ```

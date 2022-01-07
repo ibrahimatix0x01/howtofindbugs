@@ -45,6 +45,6 @@ echo "[+] Output saved to: $OUT_DIR/$TARGET/howtofindbugs.txt"
 cat $OUT_DIR/$TARGET/howtofindbugs.txt | httprobe > $OUT_DIR/$TARGET/probed.txt
 echo "[+] Live subdomains are saved to: $OUT_DIR/$TARGET/probed.txt"
 
-nuclei -list -o $OUT_DIR/$TARGET/final.txt
+nuclei -list -o $OUT_DIR/$TARGET/probed.txt
 echo "[+] Final results are saved to: $OUT_DIR/$TARGET/final.txt"
 exit 0

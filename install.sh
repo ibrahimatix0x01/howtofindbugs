@@ -33,5 +33,7 @@ chmod +x assetfinder
 cd ../
 echo [*] Installing Nuclei vulnerability scanner...
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+
 echo [*] Installing httprobe...
+
 go install github.com/tomnomnom/httprobe@latest

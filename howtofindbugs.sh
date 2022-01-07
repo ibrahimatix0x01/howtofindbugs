@@ -33,10 +33,11 @@ echo "[*] Waiting until all scripts complete..."
 wait
 
 cd $OUT_DIR
+mkdir $TARGET
 (cat subscraper.txt sublist3r.txt assetfinder.txt | sort -u) > $TARGET/howtofindbugs.txt
 rm subscraper.txt sublist3r.txt assetfinder.txt
 
 RES=$(cat howtofindbugs.txt | wc -l)
 echo -e "\n[+] HowToFindBugs complete with ${RES} results"
-echo "[+] Output saved to: $OUT_DIR/$TARGEThowtofindbugs.txt"
+echo "[+] Output saved to: $OUT_DIR/$TARGET/howtofindbugs.txt"
 exit 0

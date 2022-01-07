@@ -16,7 +16,7 @@ howtofindbugs is a simple Bash recon script that will simultaneously execute var
 Written for Debian-based Linux distributions (*Kali*, *Parrot Sec* & *Ubuntu*):
 
 ```text
-git clone https://github.com/ibrahimatix/howtofindbugs
+git clone https://github.com/ibrahimatix/howtofindbugs.git
 cd subwalker; chmod +x install.sh howtofindbugs.sh
 sudo ./install.sh
 ```

@@ -28,7 +28,7 @@ python3 sublist3r.py -d $TARGET -o $OUT_DIR/$TARGET/sublist3r.txt &> /dev/null &
 
 cd $TOOLS_DIR/assetfinder
 echo "[*] Launching assetfinder"
-./assetfinder --subs-only $TARGET > $OUT_DIR/$TARGETassetfinder.txt &
+./assetfinder --subs-only $TARGET > $OUT_DIR/$TARGET/assetfinder.txt &
 
 echo "[*] Waiting until all scripts complete..."
 wait

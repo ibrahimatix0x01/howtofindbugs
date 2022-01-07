@@ -33,4 +33,4 @@ chmod +x assetfinder
 cd ../
 
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
-go get -u github.com/tomnomnom/httprobe
+go install github.com/tomnomnom/httprobe@latest

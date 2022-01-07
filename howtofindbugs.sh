@@ -34,7 +34,7 @@ wait
 
 cd $OUT_DIR
 mkdir $TARGET
-(cat subscraper.txt sublist3r.txt assetfinder.txt | sort -u) > ${TARGET}/howtofindbugs.txt
+(cat subscraper.txt sublist3r.txt assetfinder.txt | sort -u) > howtofindbugs.txt
 rm subscraper.txt sublist3r.txt assetfinder.txt
 
 RES=$(cat howtofindbugs.txt | wc -l)

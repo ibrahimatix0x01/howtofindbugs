@@ -31,7 +31,7 @@ sudo ./install.sh
 [*] Waiting until all scripts complete...
 
 [+] HowToFindBugs complete with 44results
-[+] Output saved to: /opt/subwalker/howtofindbugs.txt
+[+] Output saved to: /opt/ibrahimatix/example.com/howtofindbugs.txt
 
 [*] Launching nuclei
 ```

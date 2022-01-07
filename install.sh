@@ -25,10 +25,12 @@ cd subscraper
 python3 setup.py install
 cd ../
 
-go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
-
 mkdir -p assetfinder
 cd assetfinder
 wget https://github.com/tomnomnom/assetfinder/releases/download/v0.1.1/assetfinder-linux-amd64-0.1.1.tgz
 gunzip -c assetfinder-linux-amd64-0.1.1.tgz |tar xvf -
 chmod +x assetfinder
+cd ../
+
+go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+go get -u github.com/tomnomnom/httprobe

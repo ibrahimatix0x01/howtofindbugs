@@ -1,6 +1,6 @@
 # howtofindbugs
-[![](https://img.shields.io/twitter/follow/ibrahimatix0x01?color=blue&label=Twitter&logo=twitter&style=plastic)](https://twitter.com/ibrahimatix_)&nbsp;&nbsp;
-[![](https://img.shields.io/github/followers/ibrahimatix0x01?color=gray&label=GitHub&logo=github&style=plastic)](https://github.com/ibrahimatix)&nbsp;&nbsp;
+[![](https://img.shields.io/twitter/follow/ibrahimatix0x01?color=blue&label=Twitter&logo=twitter&style=plastic)](https://twitter.com/ibrahimatix0x01)&nbsp;&nbsp;
+[![](https://img.shields.io/github/followers/ibrahimatix0x01?color=gray&label=GitHub&logo=github&style=plastic)](https://github.com/ibrahimatix0x01)&nbsp;&nbsp;
 [![](https://img.shields.io/badge/Sponsor-GitHub-green?style=plastic&logo=github)](https://github.com/sponsors/ibrahimatix0x01)&nbsp;&nbsp;
 
 
@@ -16,7 +16,7 @@ howtofindbugs is a simple Bash recon script that will simultaneously execute var
 Written for Debian-based Linux distributions (*Kali*, *Parrot Sec* & *Ubuntu*):
 
 ```text
-git clone https://github.com/ibrahimatix/howtofindbugs
+git clone https://github.com/ibrahimatix0x01/howtofindbugs
 cd howtofindbugs; chmod +x install.sh howtofindbugs.sh
 sudo ./install.sh
 ```
